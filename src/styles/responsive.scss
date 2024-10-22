@@ -1,0 +1,14 @@
+/* Mobile-first design */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #fff;
+  }
+  
+  @media (min-width: 768px) {
+    .navbar ul {
+      display: flex;
+      gap: 2rem;
+    }
+  }
