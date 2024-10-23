@@ -11,11 +11,9 @@ const Navbar = () => {
       <ul className="navbar-menu">
         <li className="active"><Link to="/">Home</Link></li>
         <li><Link to="/presentations">Presentations</Link></li>
-        <li><Link to="/store">Store</Link></li>
-        <li><Link to="/links">Links</Link></li>
-        <li><Link to="/events">Events</Link></li>
-        <li><Link to="/join-us">Join Us</Link></li>
-        <li><Link to="/forum">Forum</Link></li>
+        <li><Link to="/blog">Blog</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
       </ul>
       <div className="navbar-hamburger">
         <FaBars />
