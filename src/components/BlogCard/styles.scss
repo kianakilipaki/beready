@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .blog-card {
     display: flex;
     flex-direction: column;
@@ -23,7 +25,7 @@
   
       .blog-title {
         font-size: 1.5rem;
-        color: #002366; /* Navy blue */
+        color: $primary-blue; /* Navy blue */
         margin: 0;
       }
   
@@ -33,13 +35,13 @@
       }
   
       .read-more {
-        color: #FF0000; /* Red */
+        color: $primary-red; /* Red */
         font-weight: bold;
         text-decoration: underline;
         cursor: pointer;
   
         &:hover {
-          color: #002366; /* Navy blue on hover */
+          color: $primary-blue; /* Navy blue on hover */
         }
       }
     }

@@ -1,12 +1,14 @@
+@import '../../styles/variables.scss';
+
 .post {
     padding: 2rem;
   
     h1 {
-      color: #FF0000; /* Red */
+      color: $primary-red; /* Red */
     }
   
     p {
       font-size: 1rem;
-      color: #333;
+      color: $black;
     }
   }

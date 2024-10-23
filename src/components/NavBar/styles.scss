@@ -1,33 +1,53 @@
+@import '../../styles/variables.scss';
+
+.banner {
+  width: 100%;
+  background-image: url('../../assets/Websitebanner.jpg');
+  height: 310px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .navbar {
-    position:sticky;
-    top: 0;
+  display: flex;
+  justify-content: center;
+  background-color: $primary-blue;
+  text-transform: uppercase;
+  padding: 0.48em;
+  box-shadow: 0 0 6px rgba(0,0,0,0.5);
+
+  .navbar-menu {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #fff;
-    border-bottom: 2px solid #002366; /* Navy blue border */
-  
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #002366; /* Navy blue */
-    }
-  
-    ul {
-      display: flex;
-      gap: 1.5rem;
-  
-      li {
-        a {
-          color: #002366;
-          font-size: 1rem;
-          font-weight: bold;
-  
-          &:hover {
-            color: #FF0000; /* Red on hover */
-          }
+    gap: 1rem;
+
+    li {
+      list-style: none;
+      font-size: large;
+
+      a {
+        padding: 1.5rem;
+        color: white;
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+          background-color: $primary-red;
         }
+      }
+
+      &.active a {
+        background-color: $primary-red;
       }
     }
   }
+
+  .navbar-hamburger {
+    display: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+}

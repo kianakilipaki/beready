@@ -1,8 +1,10 @@
+@import '../../styles/variables.scss';
+
 .about {
     padding: 2rem;
   
     h2 {
-      color: #002366;
+      color: $primary-blue;
       margin-bottom: 1rem;
     }
   }

@@ -1,5 +1,7 @@
+@import '../../styles/variables.scss';
+
 .footer {
-    background-color: #002366; /* Navy blue */
+    background-color: $primary-blue; /* Navy blue */
     color: white;
     text-align: center;
     padding: 1rem;
