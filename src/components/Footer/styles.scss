@@ -1,8 +1,21 @@
 @import '../../styles/variables.scss';
 
+.logo  {
+  width: 300px;
+  height: 150px;
+  background-image: url('../../assets/BeReady-logo.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     background-color: $primary-blue;
     color: white;
-    text-align: center;
+    text-align: right;
     padding: 1rem;
   }

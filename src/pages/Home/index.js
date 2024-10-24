@@ -1,14 +1,16 @@
 import React from 'react';
-import BlogCard from '../../components/BlogCard'
+import BlogList from '../Blog/blogList.tsx';
 import './styles.scss';
 
-const Home = () => (
-  <div className="home">
-    <BlogCard />
-    <div className='logo'></div>
-    <h1>Welcome to BE READY Mesh</h1>
-    <p>Your resource for disaster preparedness, community resilience, and self-reliance.</p>
-  </div>
-);
+const Home = () => {
+
+  return (
+    <div className="home">
+      <h1>Welcome to <span className='be-ready'>BE READY</span> Mesh</h1>
+      <p>Your resource for disaster preparedness, community resilience, and self-reliance.</p>
+      <BlogList  />
+    </div>
+  );
+};
 
 export default Home;

@@ -2,6 +2,7 @@ import './styles.scss';
 import React from 'react';
 
 export interface CardProps {
+  id?: number;
   heading?: string;
   imageUrl?: string;
   excerpt?: string;
@@ -11,7 +12,7 @@ export interface CardProps {
 const BlogCard = ({ heading, imageUrl, excerpt, postLink }: CardProps) => {
   return (
     <div className="blog-card">
-      <img src={imageUrl} alt="Blog Post" className="blog-image" />
+      {imageUrl && <img src={imageUrl} alt="Blog Post" className="blog-image" />}
       <div className="blog-content">
         <h3 className="blog-title">{heading}</h3>
         <p className="blog-excerpt">{excerpt}</p>

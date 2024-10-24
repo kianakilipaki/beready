@@ -1,5 +1,5 @@
 import React from 'react';
-import BlogCard from '../../components/BlogCard';
+import BlogCard from '../../components/BlogCard/index.tsx'
 import './styles.scss';
 
 const Blog = () => (

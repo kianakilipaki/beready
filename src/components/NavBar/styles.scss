@@ -1,14 +1,5 @@
 @import '../../styles/variables.scss';
 
-.logo  {
-  width: 100%;
-  background-image: url('../../assets/BeReady-logo.png');
-  height: 300px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .banner {
   width: 100%;
   background-image: url('../../assets/Websitebanner.jpg');
@@ -26,7 +17,6 @@
 
   .navbar-menu {
     display: flex;
-    gap: 1rem;
 
     li {
       list-style: none;
